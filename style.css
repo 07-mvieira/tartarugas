@@ -1,5 +1,6 @@
 body{
     background-image: url("bg.jpg");
+    filter: blur(16px);
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
@@ -7,7 +8,7 @@ body{
 }
 
 #bg-gradient{
-    background: linear-gradient(#6abcff7d, #0a0043d4);
+    background: linear-gradient(#7dc4ff7d, #0a0043dc);
     margin: 0;
     padding: 0;
     width: 100%;
@@ -15,7 +16,6 @@ body{
 }
 
 header{
-    position: fixed;
     background-color: #2c5c9a;
     height: 7rem;
     width: 100%;
@@ -24,14 +24,22 @@ header{
 }
 
 main{
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: #93bcbb69;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: auto;
     width: auto;
     height: 2000px;
+    z-index: 1;
 }
 
 .button{
-    
+    align-self: center;
+    background-color: #2c5c9a;
+    width: 300px;
+    max-width: 20%;
+    height: 100px;
+    max-width: 6.67%;
 }
