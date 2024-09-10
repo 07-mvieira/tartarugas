@@ -1,6 +1,5 @@
 body{
     background-image: url("bg.jpg");
-    filter: blur(16px);
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
@@ -8,7 +7,7 @@ body{
 }
 
 #bg-gradient{
-    background: linear-gradient(#7dc4ff7d, #0a0043dc);
+    background: linear-gradient(#7dc4ff7d, #070030e1);
     margin: 0;
     padding: 0;
     width: 100%;
