@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body{
   background-image: url("files/bg.jpg");
   background-attachment: fixed;
@@ -12,7 +16,7 @@ body{
 }
 
 #bg-gradient{
-  background: linear-gradient(#7dc4ff7d, #070030e1);
+  background: linear-gradient(#7dc4ff7d, #070030e1); /*#7dc4ff7d*/
   margin: 0;
   padding: 0;
   width: 100%;
@@ -43,7 +47,7 @@ main{
   margin-right: 10%;
   margin-top: auto;
   width: auto;
-  height: 2000px;
+  height: auto;
   text-align: center;
   z-index: 2;
 }
@@ -63,8 +67,6 @@ main{
   text-align: right;
 }
 
-* {box-sizing:border-box}
-
 /* Slideshow container */
 .slideshow {
   position: relative;
@@ -79,13 +81,13 @@ main{
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 200px;
-  width: 24px;
-  height: 24px;
+  top: 172px;
+  width: 30px;
+  height: 30px;
   padding: 4px;
   color: white;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 16px;
   background-color: #000000c6;
   border-radius: 100%;
   user-select: none;
@@ -93,19 +95,17 @@ main{
 }
 
 .prev{
-  left: 45px;
+  left: 5px;
 }
 
 .next {
-  right: 45px;
+  right: 5px;
 }
 
 #dots{
-  position: absolute;
-  align-content: center;
-  text-align: center;
+  position: relative;
+  top: 36px;
   justify-content: center;
-  bottom: -300;
   z-index: 5;
 }
 
@@ -114,7 +114,7 @@ main{
   height: 7px;
   width: 7px;
   margin: 0 2px;
-  background-color: #353542;
+  background-color: #17171b;
   border-radius: 200%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -137,14 +137,22 @@ main{
   align-content: center;
 }
 
-.slide img{
-  margin: auto;
-  height: 80%;
+.slide img, .slide a{
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  height: 480px;
+  max-height: 480px;
   width: 720px;
   max-width: 720px;
   object-fit: contain;
   z-index: 1;
-  margin: 0;
+}
+
+.slide a{
+  z-index: 2;
+  text-decoration: none;
+  color: inherit;
 }
 
 figcaption{
@@ -154,12 +162,12 @@ figcaption{
   height: 136px;
   padding: 11px;
   background-color: #2b2c78c8;
-  border: 5px solid #181953;
+  border: 5px solid #181953e0;
   text-align: left;
   justify-self: center;
   color: #ffffff;
   z-index: 4;
-  bottom: 134px;
+  bottom: 136px;
 }
 
 .caption-text{
