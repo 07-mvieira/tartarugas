@@ -17,7 +17,7 @@ body{
 }
 
 #bg-gradient{
-  background: linear-gradient(#7dc4ff7d, #070030e1); /*#7dc4ff7d*/
+  background: linear-gradient(#7dc4ff7d, #000a4ce8); /*#7dc4ff7d*/
   margin: 0;
   padding: 0;
   width: 100%;
@@ -264,4 +264,13 @@ h3{
   text-align: center;
   font-size: 26px;
   font-weight: bold;
+}
+
+ul{
+  font-size: 18.5px;
+  margin: 0;
+}
+
+li{
+  margin: 15px;
 }
